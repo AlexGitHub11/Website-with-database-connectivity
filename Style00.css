@@ -1,0 +1,210 @@
+/* Here is my css scripting, it allows me to format and chage the look of my website. */
+
+/*Here we define the width of the nav bar,
+we also define overflow as hidden resulting in the screen hiding the bar if it goes into another eliment box,
+and we define the box colours,
+Added the same font as the title.*/
+.navigation-bar{
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+    background-color:rgb(59, 101, 238);
+    color: hsl(0, 0%, 100%);
+}
+
+/* Here i have defined the dimensions and where the logo will be on the nav bar. */
+.logo{
+    height: 50px;
+    width: 50px;
+    float: left;}
+
+/* For the buttons on the nav bar we need to define there attributes,
+here we set the display to inline block allowing the buttons to sit next to one another,
+using text align to set text to the middle fo the objects,
+padding for border,
+float to set bar to righ of screen,
+width and height auto set to screen */
+
+.button{
+    display: inline-block;
+    color:rgb(252, 252, 252);
+    text-align: center;
+    padding: 16px;
+    float: right;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+/* Here we have created the body meaning all pages will be affected by this,
+We have set a background img and specified for it not to be repeted,
+After this we have used cover to make the image cover the screen. */
+
+body{
+    background-image: url("Cyber-security11.png");
+    background-repeat: no-repeat center fixed;
+    background-size: cover;}
+
+/* Here i have made a class for the main content,
+this allows me to set the position of the text,
+added teh font. */
+.content{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    max-width: 100%;}
+
+/* Here i have chosen the text for my title */
+.title{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+
+/* Here i have defined my footer,
+i have made the text central to the footer,
+changed font,
+set the colour and fixed the position,
+set the position heigh and width. */
+.footer{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(59, 101, 238);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5%;
+    width: 100%;}
+
+/* Here we are styling adn formating out buttons to direct us around the database,
+display block so they are under one another, margin auto so they are center of screen,
+margine bottom so they have space between them, width and height, border colour to get rid of defult,
+backround and text colour, font and size, position and padding for space around buttons.*/
+.boxbutton{
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 200;
+    height: 40;
+    border-color: white;
+    border-right: white;
+    border-bottom: white;
+    border-left: white;
+    border-top: white;
+    background-color:rgb(59, 101, 238);
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    padding: 16px;}
+
+
+
+.boxbutton1{
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 200;
+    height: 40;
+    border-color: white;
+    border-right: white;
+    border-bottom: white;
+    border-left: white;
+    border-top: white;
+    background-color:rgb(59, 101, 238);
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    padding: 16px;
+    
+}
+
+/*Here i am creating y first table so i can format the position and style.
+Firstly we seperate the text, then defien the border of the screen,
+set text colour to white, background colour, font and font size,
+and align the text in the center of the boxes.*/    
+.table1{
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    background-color:rgb(59, 101, 238);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Here is my container for my index page,
+first i have set teh position and specified the width and heigh,
+i have set the width to fit screen and set the heigh,
+then i specified teh container img, here i set the height and width again anf positioned the background,
+i set the opacitiy for a better effect and then specified the button container,
+i set the position, colour, size, font,
+change cursor to hand(pointer),
+Lastly i specified the btn hover attribute to white on hover and the text colour.*/
+.container{
+    position: relative;
+    width: 100%;
+    height: 550px;
+}
+.container img{
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    opacity: 0.3;
+    
+}
+.container .btn{
+    position:absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50% -50%);
+    -ms-transform: translate(-50% -50%);
+    background-color:rgb(59, 101, 238);
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+.container .btn:hover{
+    background-color: white;
+    color:black;
+}
+
+
+
+/*Here i have set the position for my log in and reg forms,
+firstly i set the margin to auto centering the eliment in its container,
+i set the width to 15 to center in the screen, no visable norder and 10px padding
+to set the border away from eliments.*/
+.loginandregpos{
+    margin: auto;
+    width: 15%;
+    border: 0px;
+    padding: 10px;
+}
+
+/*Here is the positioning for my entry boxes on the add to db page,
+simular to the above but have changed the width to make less space between boxes and text,
+and have added font size to increase the standard size.*/
+.addtodbpos{
+    margin: auto;
+    width: 20%;
+    border: 0px;
+    padding: 10px;
+    font-size: 100%;
+}
+
+
+/* Here is the colour i have set for the delete button. */
+.delete{
+    color: white;
+}
+
+/*Here i have made position ajustments to the edit a row page. */
+.editpos{
+    margin: auto;
+    width: 10%;
+    border: 0px;
+    padding: 20px;
+    font-size: 100%;
+}
